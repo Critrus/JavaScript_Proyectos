@@ -1,0 +1,34 @@
+//factorial for
+function factorialFor(n) {
+  let result = 1;
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+console.log(factorialFor(10));
+
+//factorial wile
+function factorialFor(n) {
+  let result = 1;
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+console.log(factorialFor(10));
+
+//factorial break
+function factorialBreak(n) {
+  let result = 1;
+  let i = 1;
+  while (true) {
+    if (i > n) {
+      break;
+    }
+    result *= i;
+    i++;
+  }
+  return result;
+}
+console.log(factorialBreak(10));
