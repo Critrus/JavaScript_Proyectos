@@ -1,34 +1,25 @@
-//factorial for
-function factorialFor(n) {
-  let result = 1;
-  for (let i = 1; i <= n; i++) {
-    result *= i;
-  }
-  return result;
-}
-console.log(factorialFor(10));
-
-//factorial wile
-function factorialFor(n) {
-  let result = 1;
-  for (let i = 1; i <= n; i++) {
-    result *= i;
-  }
-  return result;
-}
-console.log(factorialFor(10));
-
 //factorial break
-function factorialBreak(n) {
-  let result = 1;
-  let i = 1;
-  while (true) {
-    if (i > n) {
-      break;
-    }
-    result *= i;
-    i++;
-  }
-  return result;
+let factorial = 1
+let num = 10
+while (true) {
+    factorial *= num
+    num--
+    if (num === 1) break
 }
-console.log(factorialBreak(10));
+console.log(factorial)
+
+//factorial for
+let factorialw = 1
+for (let i = 10; i > 0; i--) {
+    factorialw *= i
+}
+console.log(factorialw)
+
+//factorial while
+let factorialj = 1
+let num1 = 10
+while (num1 > 1) {
+    factorialj *= num
+    num1--
+}
+console.log(factorialj)
