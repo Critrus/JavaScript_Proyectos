@@ -1,0 +1,21 @@
+const yo = {
+    nombre: "Gonzalo",
+    edad: 28,
+    desarrollador: true,
+    nacimiento: new Date(1994, 10, 29),
+    libro:{
+        titulo: "World of Warcraft: Cronicas I",
+        autor: "CHRIS METZEN, MATT BURNS y ROBERT BROOKS",
+        fecha: new Date(2016, 4, 27),
+        url: "drive.google.com/file/d/1H4wlbLcYxBsfegg6mLc0hjvvcSww0f1T/view?usp=share_link",
+    }
+}
+
+console.log(yo.nombre)
+console.log(yo.edad)
+console.log(yo.desarrollador)
+console.log(yo.nacimiento)
+console.log(yo.libro.titulo)
+console.log(yo.libro.autor)
+console.log(yo.libro.fecha)
+console.log(yo.libro.url)
