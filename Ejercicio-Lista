@@ -1,0 +1,40 @@
+//- Una variable que contenga la lista de la compra (mínimo 5 elementos)
+const listaCompra = ["ajo", "manzanas", "pollo", "salsa", "arroz"]
+
+//- Modifica la lista de la compra y añádele "Aceite de Girasol"
+listaCompra.splice(0, 0, "aceite de girasol")
+
+//- Vuelve a modificar la lista de la compra eliminando "Aceite de Girasol"
+listaCompra.splice(0, 1)
+
+//- Una lista de tus 3 películas favoritas (objetos con propiedades: titulo, director, fecha)
+const peliculasF = [
+    {titulo: "La increíble vida de Walter Mitty", director: "Ben Stiller", fecha: "23 de enero de 2014"},
+    {titulo:"Avatar", director:"James Cameron", fecha: "15 de diciembre de 2022"},
+    {titulo:"Gake no ue no Ponyo", director:"Hayao Miyazaki", fecha: "25 de febrero de 2010"}
+
+]
+
+//- Una nueva lista que contenga las películas posteriores al 1 de enero de 2010 (utilizando filter)
+const peliculasPost = peliculasF.filter(n => n.date > "01 de enero de 2010")
+console.log(peliculasPost)
+
+//- Una nueva lista que contenga los directores de la lista de películas original (utilizando map)
+const directores = peliculasF.map(function(element){
+    return`${element.director}`
+})
+console.log(directores)
+
+//- Una nueva lista que contenga los títulos de la lista de películas original (utilizando map)
+const titulos = peliculasF.map(function(element){
+    return `${element.titulo}`
+})
+console.log(titulos)
+
+//- Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando concat)
+const peliculasUnidas = directores.concat(titulos)
+console.log(peliculasUnidas)
+
+//- Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando el factor de propagación)
+const peliculasPropagacion = [...directores, ...titulos]
+console.log(peliculasPropagacion)
