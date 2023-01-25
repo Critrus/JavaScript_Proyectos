@@ -9,14 +9,14 @@ listaCompra.splice(0, 1)
 
 //- Una lista de tus 3 películas favoritas (objetos con propiedades: titulo, director, fecha)
 const peliculasF = [
-    {titulo: "La increíble vida de Walter Mitty", director: "Ben Stiller", fecha: "23 de enero de 2014"},
-    {titulo:"Avatar", director:"James Cameron", fecha: "15 de diciembre de 2022"},
-    {titulo:"Gake no ue no Ponyo", director:"Hayao Miyazaki", fecha: "25 de febrero de 2010"}
+    {titulo: "La increíble vida de Walter Mitty", director: "Ben Stiller", fecha: new Date("23 de enero de 2014")},
+    {titulo:"Avatar", director:"James Cameron", fecha: new Date("15 de diciembre de 2022")},
+    {titulo:"Gake no ue no Ponyo", director:"Hayao Miyazaki", fecha: new Date("25 de febrero de 2010")}
 
 ]
 
 //- Una nueva lista que contenga las películas posteriores al 1 de enero de 2010 (utilizando filter)
-const peliculasPost = peliculasF.filter(n => n.date > "01 de enero de 2010")
+const peliculasPost = peliculasF.filter(n => n.fecha > new Date("01 de enero de 2010"))
 console.log(peliculasPost)
 
 //- Una nueva lista que contenga los directores de la lista de películas original (utilizando map)
@@ -38,3 +38,4 @@ console.log(peliculasUnidas)
 //- Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando el factor de propagación)
 const peliculasPropagacion = [...directores, ...titulos]
 console.log(peliculasPropagacion)
+
