@@ -1,0 +1,16 @@
+const fecha = new Date()
+console.log(fecha)
+
+const fecha2 = new Date ("Noviembre 29, 1994")
+console.log(fecha2)
+
+const comparar = fecha2.getTime() > fecha2.getTime()
+console.log(comparar)
+
+const dia = fecha2.getDate()
+const mes = (fecha2.getMonth()+1)
+const año = (fecha2.getFullYear())
+
+console.log(dia)
+console.log(mes)
+console.log(año)
