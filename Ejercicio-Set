@@ -1,0 +1,9 @@
+
+const familia = new Set(["Paloma", "Lian", "Gonzalo"])
+console.log(familia)
+
+familia.add("Gonzalo")
+console.log(familia)
+
+familia.add("JavaScript")
+console.log(familia)
