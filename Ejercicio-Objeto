@@ -1,0 +1,20 @@
+const datosMios = [
+    {nombre: "Gonzalo",
+    apellido: "Rojas",
+    edad: 28,
+    altura: 1.75,
+    eresDesarrollador: true}
+]
+
+const edad = datosMios.edad
+console.log(edad)
+
+const datosMiosAmigos = [
+    {datosMios},
+    {nombre: "Lian", edad: 9},
+    {nombre: "Paloma", edad: 30}
+]
+console.log(datosMiosAmigos)
+
+datosMiosAmigos.sort((a, b) => a.edad - b.edad)
+console.log(datosMiosAmigos)
