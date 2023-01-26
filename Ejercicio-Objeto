@@ -10,7 +10,7 @@ const edad = datosMios.edad
 console.log(edad)
 
 const datosMiosAmigos = [
-    {datosMios},
+    {...datosMios},
     {nombre: "Lian", edad: 9},
     {nombre: "Paloma", edad: 30}
 ]
