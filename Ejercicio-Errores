@@ -1,0 +1,10 @@
+function customError(message) {
+    try {
+      throw new Error(message);
+    } catch (e) {
+      console.error(e);
+      fs.appendFile("error.log", e, function (err) {
+        if (err) throw err;
+      });
+    }
+  }
